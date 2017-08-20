@@ -1,0 +1,111 @@
+.fa.fa-times,.fa.fa-bars{
+    display: none;
+}
+.navigate [type="checkbox"],
+.navigate lanel.slidebar
+{
+    display: none;
+}
+.menubar{
+    display: block;
+}
+.navigate label.slidebar{
+    display: none;
+    color: rgb(221, 229, 232);
+    font-family: arial;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px 10px;
+    border: 1px solid #00a2ff;
+    border-bottom: 0px solid;
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(26, 151, 183, 0.58);
+}
+
+@media screen and (max-width:1218px){
+    
+    .text_logo h1{
+        font-size: 58px;
+    }
+	.navigate ul#menu{
+		display: none;
+        text-align: right;
+        width: 100%;
+	}
+    .content{
+        margin: 200px 0 10px 0 ;
+    }
+    .fa.fa-bars{
+        display: block;
+    }
+    .fa.fa-bars,.fa.fa-times{
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        font-size: 35px;
+    }
+	#menu li{
+		display: block;
+        float: none;
+		margin:  0;
+        padding: 0;
+	}
+	#menu li a{
+		border-radius: 5px;
+        display: block;
+        padding: 10px; 
+    }
+    #menu li a:hover{
+        color: #139fc2;
+    }
+    input.menubar:checked+label.slidebar{
+        background-color: #1b2c33;
+        color: #ffffff;
+    }
+    .navigate label.slidebar{
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        padding: 10px 45px 10px 0;
+        position: relative;
+        margin: 0;
+    }
+    .navigate label.slidebar:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+     input.menubar:checked ~ ul#menu{
+        display: block;
+    }
+    input.menubar:checked +label.slidebar i.fa.fa-bars{
+        display: none;
+    } 
+    input.menubar:checked +label.slidebar i.fa.fa-times{
+        display: block;
+    }
+    .middle{
+        
+        border-radius: none;
+    }
+    .welcome{
+        display: block;
+        float: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        text-align: center;
+    }
+    .video{
+        display: block;
+    }
+    .video #kinozal{
+        display: none;
+    }
+    #lori_kino{
+    position: static;
+        margin-bottom: -3px;
+        width: 100%;
+        height: 300px;
+
+    }
+
+}
