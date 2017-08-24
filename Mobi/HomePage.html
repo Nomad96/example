@@ -3,11 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="homepagestyle.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/homepagestyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
+    <div class="abs"> <i class="fa fa-times" aria-hidden="true"></i>
+        <div class="container"> <img src="assets/img/flat-face-icon-23.png" alt="">
+            <form action="" method="post">
+                <div class="input">
+                    <input type="text" id="log" name="username" placeholder="Введите логин"> </div>
+                <div class="input">
+                    <input type="password" id="pass" name="password" placeholder="Введите пароль"> </div>
+                <input type="submit" id="submit" name="submit" value="Войти">
+                <br> <a href="#">Восстановить пароль</a> </form>
+            <div class="social"> <i class="fa fa-vk" aria-hidden="true"></i> <i class="fa fa-odnoklassniki" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-google-plus" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> </div>
+        </div>
+    </div>
     <div class="header">
         <div class="console">
             <ul class="up_menu">
@@ -37,72 +53,17 @@
                     </ul>
                 </li>
                 <li>
-                    <a href=""><img src="assets/img/Layer-36.png" alt=""></a>
+                    <a id="form" href=""><img src="assets/img/Layer-36.png" alt=""></a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="clear"></div>
     <div class="search_a">
         <div class="search_b"><img id="logo" src="assets/img/logo.png" alt="">
             <ul class="online">
-                <li class="shop">օնլայն խանութ
-<!--
-                    <ul class="online_shop">
-                        <li>
-                            <a href="#"> <img src="assets/img/Layer-32.png" alt="heraxosi patyan">
-                                <h4>Հեռախոսի <br> պատյաններ</h4> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <img src="assets/img/create-protective-case.png" alt="plansheti patyan">
-                                <h4>Պլանշետի <br>պատյաններ</h4> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <img src="assets/img/steklo_zashitnoe_espada.png" alt="pashpanich shert">
-                                <h4>պաշտպանիչ <br>շերտեր</h4> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <img src="assets/img/Layer-33.png" alt="usb">
-                                <h4>USB մալուխներ</h4> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <img src="assets/img/beats-by-dre-studio-wireless-white-high-definition-stereo-bluetooth-headphones.png" alt="naushnik">
-                                <h4>ականջակալներ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/71wpUhn76RL.png" alt="bleutooth">
-                                <h4>bleutooth <br>բարձրախոսներ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/Layer-32.png" alt="heraxosi patyan">
-                                <h4>Հեռախոսի <br>պատյաններ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/create-protective-case.png" alt="plansheti patyan">
-                                <h4>Պլանշետի <br>պատյաններ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/steklo_zashitnoe_espada.png" alt="pashpanich shert">
-                                <h4>պաշտպանիչ <br>շերտեր</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/Layer-33.png" alt="usb">
-                                <h4>USB մալուխներ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/beats-by-dre-studio-wireless-white-high-definition-stereo-bluetooth-headphones.png" alt="naushnik">
-                                <h4>ականջակալներ</h4> </a>
-                        </li>
-                        <li>
-                            <a href=""> <img src="assets/img/71wpUhn76RL.png" alt="bleutooth">
-                                <h4>bleutooth <br>բարձրախոսներ</h4> </a>
-                        </li>
-                    </ul>
--->
-                </li>
+                <li class="shop">օնլայն խանութ </li>
             </ul>
             <form id="forma_a" action="" method="get">
-<!--              display -->
                 <input class="voronum" type="search" name="" placeholder="Փնտրել...">
                 <select name="bajin" id="all">
                     <option value="all">Բոլոր բաժինները</option>
@@ -144,7 +105,7 @@
     <div class="content">
         <div class="content_a">
             <div class="content_slide">
-                <div class="content_slide_a"> <img iclass="one" src="assets/img/Layer-17.jpg" alt=""> <a href="">iPhone 7 | 7plus նոր փայտե հավաքածու</a> </div>
+                <div class="content_slide_a"> <img class="one" src="assets/img/Layer-17.jpg" alt=""> <a href="">iPhone 7 | 7plus նոր փայտե հավաքածու</a> </div>
                 <div class="content_slide_b">
                     <div class="two"> <img class="two" src="assets/img/Layer-18.jpg" alt=""> <a href="">նորավոճ beats ականջակալներ</a> </div>
                     <div class="three"> <img class="three" src="assets/img/Layer-11.jpg" alt=""> <a href="">1000-ից ավել պաշտպանիչ շերտեր</a> </div>
@@ -155,63 +116,41 @@
         <div class="content_b">
             <div class="content_drop">
                 <ul class="drop">
-                    <li>
-                        <a href=""><img src="assets/img/1.png" alt="">
+                    <li> <a href=""><i class="sprite sprite-1"></i>
                             <p>պատյան</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/2.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-2"></i>
                             <p>պաշտպանիչ
                                 <br>շերտ</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/3.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-3"></i>
                             <p>USB մալուխ</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/4.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-4"></i>
                             <p>ականջակալ</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/5.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-5"></i>
                             <p>bleutooth
                                 <br>բարձրախոս</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/6.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-6"></i>
                             <p>մկնիկ</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/7.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-7"></i>
                             <p>ստեղնաշար</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/8.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-8"></i>
                             <p>վեբ կամերա</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/9.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-9"></i>
                             <p>լիցքավորիչ </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/10.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-10"></i>
                             <p>բարձրախոս</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><img src="assets/img/11.png" alt="">
+                        </a> </li>
+                    <li> <a href=""><i class="sprite sprite-11"></i>
                             <p>թվային ընդունիչ</p>
-                        </a>
-                    </li>
+                        </a> </li>
                 </ul>
             </div>
         </div>
