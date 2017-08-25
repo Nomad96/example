@@ -13,7 +13,7 @@
 .container{
     width: 450px;
     margin: 250px auto 0 auto;
-    background-color: #1a394f;
+    background-color: #383746;
     text-align: center;
     -webkit-box-shadow: 0 -5px 0#3adbfd;
     box-shadow: 0 -5px 0#3adbfd;
@@ -87,7 +87,11 @@
     font-family: "FontAwesome";
     content: "\f023";
 }
-.social i{
+.connect{
+    padding-bottom: 20px;
+}
+.connect i{
+    font-size: 20px;
     width: 30px;
     padding: 10px;
     color:#fff;
@@ -95,7 +99,7 @@
     transition: 0.5s color;
     cursor: pointer;
 }
-.social i:hover{
+.connect i:hover{
     color: #1a394f;
     background-color: #fff;
     border-radius: 20%;

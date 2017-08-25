@@ -167,11 +167,11 @@ input {
 .header {
     width: 100%;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
     /*    fix height*/
     
     background-color: #e6e6e6;
-    box-shadow: 0px 0px 5px 1px  rgba(0, 0, 0,0.5)
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
 }
 
 /*
@@ -211,6 +211,7 @@ a {
     top: -9999px;
     width: 99%;
     border: 0px !important;
+    z-index: 55;
 }
 .lang:hover .en-ru {
     opacity: 1;
@@ -240,6 +241,7 @@ a {
 .amd {
     position: absolute;
     opacity: 0;
+    z-index: 55;
     -webkit-transition: 0.5s opacity;
     transition: 0.5s opacity;
     top: -9999em;
@@ -340,6 +342,7 @@ ul.amd li:nth-child(3) {
 }
 .search_a {
     /*    margin*/
+    
     margin-top: 5px;
     width: 100%;
     background-color: #ffffff;
@@ -392,6 +395,7 @@ ul.amd li:nth-child(3) {
 }
 #forma_a {
     display: inline-block;
+    position: relative;
 }
 #forma_a input {
     display: inline;
@@ -461,16 +465,34 @@ ul.amd li:nth-child(3) {
     margin: 0px auto;
     height: inherit;
 }
-.show select {
+.select {
+    display: inline-block;
+    box-sizing: border-box;
     width: 254px;
     float: left;
-    display: inline-block;
-    margin-top: 20px;
+    margin-right: 10px;
     height: 40px;
-    text-indent: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+.show select {
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
     border: 0;
     font-size: 16px;
-    margin-right: 10px;
+    -webkit-appearance: none;
+}
+.select::after {
+    content: '';
+    position: absolute;
+    z-index: 55;
+    border: 10px solid;
+    border-color: #585670 transparent;
+    border-bottom: 0;
+    right: 12px;
+    top: 15px;
+    pointer-events: none;
 }
 #aksesuar {
     border-radius: 6px 0px 0px 6px;
@@ -594,9 +616,7 @@ div.three a {
     margin: 0 auto;
     height: 91px;
 }
-.drop {
-    height: inherit;
-}
+
 .drop li {
     float: left;
     text-align: center;
@@ -657,43 +677,10 @@ div.three a {
     margin-right: -7px;
     margin-bottom: 10px;
 }
-.drop li:first-child img {
-    padding-bottom: 9px;
-}
-.drop li:nth-child(2) img {
-    padding-bottom: 0px;
-}
-.drop li:nth-child(3) img {
-    padding-bottom: 10px;
-}
-.drop li:nth-child(4) img {
-    padding-bottom: 11px;
-}
-.drop li:nth-child(5) img {
-    padding-bottom: 3px;
-}
-.drop li:nth-child(6) img {
-    padding-bottom: 11px;
-}
-.drop li:nth-child(7) img {
-    padding-bottom: 11px;
-}
-.drop li:nth-child(8) img {
-    padding-bottom: 7px;
-}
-.drop li:nth-child(9) img {
-    padding-bottom: 8px;
-}
-.drop li:nth-child(10) img {
-    padding-bottom: 9px;
-}
-.drop li:last-child img {
-    padding-bottom: 9px;
-}
+
 .drop li:hover a {
     color: #08adef;
 }
-
 
 /*sprite*/
 .sprite {
@@ -702,78 +689,70 @@ div.three a {
     display: block;
     margin: 0 auto;
 }
-
 .sprite-1 {
     width: 27px;
     height: 43px;
     background-position: -5px -5px;
 }
-
 .sprite-10 {
     width: 28px;
     height: 40px;
     background-position: -42px -5px;
-    
 }
-
 .sprite-11 {
     width: 52px;
     height: 39px;
     background-position: -80px -5px;
 }
-
 .sprite-2 {
     width: 27px;
     height: 43px;
     background-position: -80px -54px;
 }
-
 .sprite-3 {
     width: 28px;
     height: 41px;
     background-position: -117px -54px;
 }
-
 .sprite-4 {
     width: 39px;
     height: 41px;
     background-position: -5px -105px;
 }
-
 .sprite-5 {
     width: 46px;
     height: 40px;
     background-position: -54px -107px;
 }
-
 .sprite-6 {
     width: 41px;
     height: 40px;
     background-position: -110px -107px;
 }
-
 .sprite-7 {
     width: 46px;
     height: 40px;
     background-position: -155px -5px;
 }
-
 .sprite-8 {
     width: 29px;
     height: 41px;
     background-position: -155px -55px;
 }
-
 .sprite-9 {
     width: 24px;
     height: 40px;
     background-position: -42px -55px;
 }
+
 /*sprite*/
 .drop li a {
     text-align: center;
     color: #ffffff;
     font-size: 14px;
+}
+.drop li a:hover i{
+    color: #000;
 }
 .block {
     width: 100%;
@@ -878,7 +857,6 @@ ul.noruyt li:hover p.firma {
 ul.noruyt li:hover p.gin {
     color: #b8b8b8;
 }
-
 noruyt ul.noruyt li:nth-child(-n+4) {
     margin-bottom: 40px;
 }
@@ -955,19 +933,6 @@ ul.gin li:after {
     margin-left: -21px;
     opacity: 0;
     cursor: pointer;
-}
-ul.gin li:before {
-    content: url("../assets/img/bascet-blue.png");
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    margin-right: 10px;
-    z-index: 4;
-    opacity: 0;
-    cursor: pointer;
-}
-ul.gin li:hover:before {
-    opacity: 1;
 }
 ul.gin li:hover:after {
     opacity: 1;
@@ -1067,7 +1032,8 @@ div.social h3 {
 div.social h3:before {
     content: '';
     border: 28px solid;
-    border-color: #ffffff transparent transparent transparent;
+    border-bottom-width: 0px;
+    border-color: #ffffff transparent;
     top: 0px;
     left: 50%;
     margin-left: -28px;
@@ -1086,7 +1052,6 @@ div.end div.social ul.zexch li {
     padding: 6px 5px;
     margin: 0px 8px;
 }
-
 div.end div.social ul.zexch li a {
     color: #ffffff;
     text-transform: uppercase;
@@ -1251,4 +1216,21 @@ div.partners p {
     color: #928e8e;
     line-height: 18px;
     letter-spacing: 2px;
+}
+.top{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(8, 173, 239);
+    position: fixed;
+    right: 0px;
+    bottom: 20%;
+    font-size: 50px;
+    border-radius: 20%;
+    display: none;
+}
+.fa.fa-angle-up{
+    color: #ffffff;
+    position: absolute;
+    top: -13px;
+    left: -1px;
 }
