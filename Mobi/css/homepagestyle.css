@@ -339,9 +339,7 @@ ul.amd li:nth-child(3) {
 .up_menu li:nth-child(2) {
     margin-left: 24px;
 }
-.search_a {
-    /*    margin*/
-    
+.search_a {    
     margin-top: 5px;
     width: 100%;
     background-color: #ffffff;
@@ -351,47 +349,48 @@ ul.amd li:nth-child(3) {
 .search_b {
     max-width: 1198px;
     width: 100%;
+    margin-top: 20px;
     display: inline-block;
 }
 #logo {
     width: 196px;
     height: 38px;
-    margin-top: 15px;
+/*    margin-top: 15px;*/
     float: left;
     margin-right: 120px;
 }
 .online {
     float: left;
-    margin-top: 25px;
-    display: block;
+/*    margin-top: 25px;*/
+    display: inline-block;
     text-transform: uppercase;
     font-size: 18px;
     position: relative;
     font-family: Arial AMU;
     font-weight: bold;
     margin-right: 15px;
-}
-.online li {
     color: #595671;
-    cursor: pointer;
+    line-height: 40px;
 }
-.online li.shop:after {
+.online::after {
     content: '';
     position: absolute;
     border-width: 10px 10px 0px 10px;
     border-style: solid;
-    border-color: #595671 transparent transparent transparent;
-    top: 5px;
+    border-color: #595671 transparent;
+    top: 15px;
     left: 180px;
 }
-.online li:hover {
+/*
+.online:hover {
     color: #239add;
 }
-.online li.shop:hover::after {
+.online:hover::after {
     transform: rotate(180deg);
     border-color: #239add transparent transparent transparent;
-    /*    problem*/
+        problem
 }
+*/
 #forma_a {
     display: inline-block;
     position: relative;
@@ -399,7 +398,7 @@ ul.amd li:nth-child(3) {
 #forma_a input {
     display: inline;
     float: left;
-    margin-top: 14px;
+/*    margin-top: 14px;*/
 }
 .voronum {
     width: 343px;
@@ -417,7 +416,7 @@ ul.amd li:nth-child(3) {
 #all {
     display: block;
     float: left;
-    margin-top: 14px;
+/*    margin-top: 14px;*/
     height: 38px;
     width: 175px;
     text-indent: 10px;
@@ -449,7 +448,7 @@ ul.amd li:nth-child(3) {
 }
 #bascet {
     display: block;
-    margin-top: 14px;
+    margin-top: 0px;
     float: right;
 }
 .menu {
