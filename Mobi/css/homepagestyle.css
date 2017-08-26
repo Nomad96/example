@@ -168,11 +168,9 @@ input {
     width: 100%;
     text-align: center;
     display: inline-block;
-    /*    fix height*/
-    
     background-color: #e6e6e6;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5)
-}
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+ }
 
 /*
 */
@@ -180,10 +178,11 @@ input {
     max-width: 1198px;
     width: 100%;
     display: inline-block;
+    margin-bottom: -4px;
 }
 .up_menu {
-    height: 30px;
     float: right;
+    padding-bottom: 5px;
 }
 .clear {
     clear: both;
@@ -197,7 +196,7 @@ a {
     float: left;
 }
 .up_menu li a {
-    display: inline-block;
+    display: block;
     padding: 9px 0px 4px 0px;
 }
 .lang {

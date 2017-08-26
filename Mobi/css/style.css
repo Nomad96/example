@@ -12,7 +12,10 @@
 }
 .container{
     width: 450px;
-    margin: 250px auto 0 auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #383746;
     text-align: center;
     -webkit-box-shadow: 0 -5px 0#3adbfd;
