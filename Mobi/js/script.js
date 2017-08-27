@@ -3,6 +3,12 @@ $(document).ready(function () {
                 $('.abs').fadeToggle('slow');
                 return false;
             }); //click
+    $('a.online').click(function(){
+        $('.xanut').fadeToggle('fast',function(){
+            $('a.online').addClass('clicked');
+        });//toggle
+        return false;
+    });//click
     $(window).scroll(function(){
         if($(this).scrollTop()>400){
             $('.top').fadeIn();

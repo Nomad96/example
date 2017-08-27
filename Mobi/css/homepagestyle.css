@@ -351,6 +351,7 @@ ul.amd li:nth-child(3) {
     width: 100%;
     margin-top: 20px;
     display: inline-block;
+    position: relative;
 }
 #logo {
     width: 196px;
@@ -381,16 +382,38 @@ ul.amd li:nth-child(3) {
     top: 15px;
     left: 180px;
 }
-/*
-.online:hover {
-    color: #239add;
+.clicked{
+    color: #13a3e5 ;
 }
-.online:hover::after {
-    transform: rotate(180deg);
-    border-color: #239add transparent transparent transparent;
-        problem
+.xanut{
+    position: absolute;
+    display:  inline-block;
+    max-width: 1198px;
+    width: 100%;
+    height: 550px;
+    background-color: #ffffff;
+    z-index: 66;
+    top: 52px;
+    left: 0;
+    box-shadow: 3px 3px 20px -5px
 }
-*/
+.xanut ul {
+    display: inline-block;
+    
+}
+.xanut ul li{
+    float: left;
+    margin: 10px 0px;
+    padding: 0 25px;
+    height: 220px;
+    line-height: 320px;
+    overflow: hidden;
+}
+
+.xanut ul li a{
+    display: block;
+}
+
 #forma_a {
     display: inline-block;
     position: relative;
