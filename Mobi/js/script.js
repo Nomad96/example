@@ -4,9 +4,8 @@ $(document).ready(function () {
                 return false;
             }); //click
     $('a.online').click(function(){
-        $('.xanut').fadeToggle('fast',function(){
-            $('a.online').addClass('clicked');
-        });//toggle
+        $('.xanut').fadeToggle('fast');//toggle
+        $('a.online').toggleClass('clicked','fast');//toggleClass
         return false;
     });//click
     $(window).scroll(function(){
